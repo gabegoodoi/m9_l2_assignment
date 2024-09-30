@@ -8,17 +8,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container-fluid px-0 text-center">
-            <header class="header">
-                <h1 class="h1 text-warning">Tech Solutions</h1>
-                <p class="pb-3 text-primary">Welcome to tech solutions, the website where your tech dreams come true.</p>
-            </header> 
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 text-center container-fluid">
+            <button class="navbar-toggler bg-warning btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <h1 class="navbar-brand p-2"><a class="text-decoration-none text-warning" href="#">Tech Solutions</a></h1>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-warning" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="https://www.youtube.com/">YouTube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="https://vimeo.com/">Vimeo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="container-fluid p-5">
             <h2 class="h2 pb-3">Services</h2>
             <div class="row">
                 <div class="col-4">
-                    <div class="rounded bg-warning bg-gradient mx-1 p-3">
+                    <div class=" card rounded bg-warning bg-gradient mx-1 p-3">
                         <img class="img-fluid" src="images/cloud.png">
                         <h3 class="h3">Cloud Services</h3>
                         <br>
@@ -27,7 +42,7 @@
                 </div>
     
                 <div class="col-4">
-                    <div class="rounded bg-light bg-gradient mx-1 p-3">
+                    <div class=" card rounded bg-light bg-gradient mx-1 p-3">
                         <img class="img-fluid" src="images/hardware.png">
                         <h3 class="h3">Hardware</h3>
                         <br>
@@ -35,7 +50,7 @@
                     </div>
                 </div>                
                 <div class="col-4">
-                    <div class="rounded bg-success bg-gradient mx-1 p-3">
+                    <div class=" card rounded bg-success bg-gradient mx-1 p-3">
                         <img class="img-fluid" src="images/support.png">
                         <h3 class="h3">Tech Support</h3>
                         <br>
@@ -81,7 +96,7 @@
                     </div>
                 </div>
                 
-                <button type="submit" class="btn btn-danger m-5">Submit</button>
+                <button type="submit" class="btn btn-danger m-3">Submit</button>
             </form>
         </div>
 
